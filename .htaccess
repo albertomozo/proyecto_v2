@@ -1,0 +1,8 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteRule ^pelicula/([0-9]*)$ pelicula_detalle_3.php?peliId=$1
+
+
+	
+RewriteRule volveremos_pronto cerrado.php

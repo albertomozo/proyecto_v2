@@ -1,0 +1,4 @@
+2023/06/21 10:13:35;/admin/login_acceso.php;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36;1;1687356815;
+2023/06/21 10:13:36;/admin/peliculas.php;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36;1;1687356816;-
+2023/06/21 10:14:44;/admin/peliculas.php;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36;1;1687356884;-
+2023/06/21 10:15:23;/admin/usuarios.php;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36;1;1687356923;-

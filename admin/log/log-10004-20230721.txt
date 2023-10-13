@@ -1,0 +1,6 @@
+2023/07/21 14:57:42;/infinity/admin/login_acceso.php;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82;10004;1689951462;
+2023/07/21 14:57:42;/infinity/admin/peliculas.php;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82;10004;1689951462;-
+2023/07/21 14:58:07;/infinity/admin/peliculas.php;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82;10004;1689951487;-
+2023/07/21 15:06:02;/infinity/admin/peliculas.php;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82;10004;1689951962;-
+2023/07/21 15:07:50;/infinity/admin/peliculas.php;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82;10004;1689952070;-
+2023/07/21 15:07:58;/infinity/admin/peliculas.php;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82;10004;1689952078;-

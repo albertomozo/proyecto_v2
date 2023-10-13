@@ -1,0 +1,7 @@
+2023/02/27 06:55:12;/admin/login_acceso.php;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/110.0;1;1677498912;
+2023/02/27 06:55:13;/admin/peliculas.php;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/110.0;1;1677498913;-
+2023/02/27 06:56:23;/admin/peliculas.php;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/110.0;1;1677498983;-
+2023/02/27 06:56:30;/admin/peliculas.php;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/110.0;1;1677498990;-
+2023/02/27 06:56:34;/admin/peliculas.php;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/110.0;1;1677498994;-
+2023/02/27 06:56:45;/admin/peliculas.php;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/110.0;1;1677499005;-
+2023/02/27 06:58:32;/admin/usuarios.php;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/110.0;1;1677499112;-

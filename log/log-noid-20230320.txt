@@ -1,0 +1,2 @@
+2023/03/20 03:10:58;/generos.php;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0;noid;1679296258;genero-accion1
+2023/03/20 06:35:06;/generos.php;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0;noid;1679308506;genero-accion1
