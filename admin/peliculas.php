@@ -4,7 +4,7 @@
 <html lang="es">
 <head>
     <?php 
-     include("inc_logaccesos.php");
+     include("inc_logaccesos.php"); // se graba una linea de log
      $headTitle .= " Peliculas";
      $headDescription .= "Muestro la toda lista de peliculas de mi base de datos";
      $headKeywords .=""; 
@@ -38,7 +38,8 @@
 </head>
 
 <body id="page-top">
-    <?php include("inc_modal_bienvenida.php"); ?>
+    <?php 
+    include("inc_modal_bienvenida.php"); ?>
     <script>
        //document.getElementById('BienvenidaModal').style.display = 'block';
        document.getElementById('BienvenidaModal').classList.add = 'show';

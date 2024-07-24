@@ -71,7 +71,7 @@
         WHERE id=$id";
         $resultado = mysqli_query($conpel,$query);
         if (!$resultado){
-            echo "<p>Error en la actualizaciuón <br> $query</p>";
+            echo "<p>Error en la actualización <br> $query</p>";
         }
 
     } else {

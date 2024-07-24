@@ -51,7 +51,8 @@
                         $pagina = $_REQUEST['pagina'];
                     }
                     $url = "https://api.themoviedb.org/3/search/multi?api_key=$tmdb_apikey&language=es&query=$search&page=1&include_adult=false&page=$pagina";
-                    $resultado = file_get_contents($url);
+                    $resultado = @file_get_contents($url);
+                    //if (! $resultado) { echo 'error'; exit;} // error conexion 
                     $items = json_decode($resultado, true);
                     echo "<p>Termino de busqueda : $search</p>";
                     $page = $items['page'];

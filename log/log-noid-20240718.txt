@@ -1,0 +1,2 @@
+2024/07/18 09:18:22;/proyecto_v2/generos.php;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0;noid;1721287102;genero-accion1
+2024/07/18 11:26:10;/proyecto_v2/generos.php;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0;noid;1721294770;genero-accion1

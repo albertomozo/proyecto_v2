@@ -71,7 +71,7 @@ function ratestar($id, $puntuacion){
                 <h6 class="text-primary">Los proyectos</h6>
                 <?php
                   foreach ($grupos as $key => $valor){
-                    echo "<h6 class=   \"text-primary mano\" onclick=\"verproyecto('$valor')\">$key   $valor</h6>";
+                    echo "<h6 class=   \"text-primary\" onclick=\"verproyecto('$valor')\">$key   $valor</h6>";
                     //$datosCurso = json_encode($valor,true);
 
                   }
@@ -80,7 +80,16 @@ function ratestar($id, $puntuacion){
                 <h1 class="mb-4">Visita los proyectos de la ultima formación</h1>
 
             </div>
-     
+         <!--    <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-12 text-center">
+                    <ul class="list-inline mb-5" id="portfolio-flters">
+                        <li class="mx-2 active" data-filter="*">All</li>
+                        <li class="mx-2" data-filter=".first">Solar Panels</li>
+                        <li class="mx-2" data-filter=".second">Wind Turbines</li>
+                        <li class="mx-2" data-filter=".third">Hydropower Plants</li>
+                    </ul>
+                </div>
+            </div> -->
            
             <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.5s" id="proyectos">              
             </div>

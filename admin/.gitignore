@@ -1,2 +1,5 @@
 node_modules
 vendor
+log
+inc_conexion_peliculas_remoto.php
+inc_conexion_peliculas_local.php

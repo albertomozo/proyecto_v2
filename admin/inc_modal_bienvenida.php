@@ -1,4 +1,4 @@
-<?php $servidor="localhost";
+<?php /* $servidor="localhost";
 $bduser="root";
 $bdclave="";
 $bdnombre="peliculas";
@@ -12,22 +12,24 @@ if ($conpel){
 if(mysqli_num_rows($resultado)!=0){ 
                 
     while($fila=mysqli_fetch_array($resultado)){  
-        $key = $fila['meta'];
+        $key = trim($fila['meta']);
         $valor = $fila['valor'];
         $$key = $valor;
+        echo "$key = $valor"
         ?>
             
             <?php
     }
 }  
-mysqli_close($conpel);
+mysqli_close($conpel); */
                         ?>  
 <div class="show" id="BienvenidaModal" tabindex="100" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"><?php echo $mensaje_bienvenida; ?></h5>
+                    <h5 class="modal-title" id="exampleModalLabel"><?php echo $CFGP['mensaje_bienvenida']; ?></h5>
+                    </h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close" onClick="document.getElementById('BienvenidaModal').style.display='none'">
                         <span aria-hidden="true">×</span>
                     </button>

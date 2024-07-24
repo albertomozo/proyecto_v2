@@ -1,0 +1,180 @@
+{"curso":"FRONT_202303",
+"fecha inicio" : "2023-03-16",
+"fecha fin" : "2023-06-24",
+"lugar" : "Donosti",
+"empresa" : "AREA",
+"url_drive" : "https://docs.google.com/presentation/d/1xnL3trJ2fUdLhTvcV_nGY20AvIViLePu9sVpZYWu_-o/edit?usp=sharing",
+
+"tutor":
+    {"Nombre":"Alberto Mozo",
+        "email" : "albertomozodocente@gmail.com",
+        "linked" : "https://www.linkedin.com/in/alberto-mozo-avellaned-80615713/",
+        "github" : "albertomozo",
+        "url" : "http://albertomozo.infinityfreeapp.com"
+       
+    
+    },
+"alumnos" : [  
+    {
+            "Nombre": "Mikel",
+            "email" : "mikel.basterrika@gmail.com",
+            "github" : "https://github.com/basterrika/",
+            "imagen" : "obras.gif",
+            "inicio" : {    
+                "HTML" : 5,
+                "CSS" : 5,
+                "JS" : 4,
+                "VUE" : 0,
+                "API" : 4
+            },
+            "fin" : {     
+                "HTML" : 5,
+                "CSS" : 5,
+                "JS" : 5,
+                "VUE" : 5,
+                "API" : 5
+            }
+    },
+    {
+            "Nombre":"Silvia",
+            "email" : "silviabergillosc@gmail.com",
+            "linked" : "",
+            "github" : "",
+            "url" : "",
+            "descripcion" : "",
+            "imagen" : "obras.gif",
+            "inicio" : {    
+                "HTML" : 2,
+                "CSS" : 2,
+                "JS" : 0,
+                "VUE" : 0,
+                "API" : 0
+            },
+            "fin" : {     
+                "HTML" : 2,
+                "CSS" : 2,
+                "JS" : 0,
+                "VUE" : 0,
+                "API" : 0
+            }
+        },
+    {
+            "Nombre":"Germán Oronoz",
+            "email" : "german@pom.es",
+            "linked" : "https://es.linkedin.com/in/germanoronoz",
+            "github" : "https://github.com/germanoronoz",
+            "url" : "https://www.pomstandard.com/es/",
+            "imagen" : "https://www.pomstandard.com/wp-content/uploads/sites/4/2021/06/Foto-perfil-German-Oronoz.jpg",
+            "descripcion" : "Webs muy pepinas",
+            "inicio" : {    
+                "HTML" : 10,
+                "CSS" : 10,
+                "JS" : 3,
+                "VUE" : 0,
+                "API" : 2
+            },
+            "fin" : {     
+                "HTML" : 10,
+                "CSS" : 10,
+                "JS" : 7,
+                "VUE" : 6,
+                "API" : 6
+            }
+        },
+        {
+            "Nombre":"Marco",
+            "email" : "marco.mateucci@areafor.com",
+            "linked" : "https://www.linkedin.com/in/marco-matteucci-santos-8494ab20a/",
+            "github" : "https://github.com/MarcoMat99",
+            "url" : "https://gruppoilforno.com/",
+            "imagen" : "obras.gif",
+            "descripcion" : "Pizzería",
+            "inicio" : {    
+                "HTML" : 1,
+                "CSS" : 1,
+                "JS" : 1,
+                "VUE" : 3,
+                "API" : 2
+            },
+            "fin" : {     
+                "HTML" : 1,
+                "CSS" : 1,
+                "JS" : 1,
+                "VUE" : 3,
+                "API" : 2
+            }
+        },
+        {
+            "Nombre":"Jon Echeverria",
+            "email" : "jon.echeverria@gmail.com",
+            "linked" : "https://www.linkedin.com/",
+            "github" : "https://github.com/jonecheve",
+            "url" : "---",
+            "imagen" : "obras.gif",
+            "descripcion" : "Descripción de vuestra web",
+            "inicio" : {    
+                "HTML" : 1,
+                "CSS" : 1,
+                "JS" : 1,
+                "VUE" : 3,
+                "API" : 2
+            },
+            "fin" : {     
+                "HTML" : 4,
+                "CSS" : 4,
+                "JS" : 4,
+                "VUE" : 3,
+                "API" : 3
+            }
+        },
+        {
+            "Nombre":"Iván Delgado Terroso",
+            "email" : "ivandelter@outlook.com",
+            "linked" : "https://es.linkedin.com/in/iv%C3%A1n-delgado-terroso-438b58217",
+            "github" : "https://github.com/iDelTer",
+            "url" : "https://delter.dev",
+            "imagen" : "https://media.licdn.com/dms/image/D5603AQHJGwqrnVL_5g/profile-displayphoto-shrink_800_800/0/1677767116977?e=2147483647&v=beta&t=kg37KpQgPPBiYc8MxxaMNHlRMoDq5hDwjjzh6EDeXDA",
+            "descripcion" : "Portfolio y proyectos de Iván",
+            "inicio" : {    
+                "HTML" : 4,
+                "CSS" : 4,
+                "JS" : 3,
+                "VUE" : 0,
+                "API" : 1
+            },
+            "fin" : {     
+                "HTML" : 1,
+                "CSS" : 1,
+                "JS" : 1,
+                "VUE" : 3,
+                "API" : 2
+            }
+        },
+{
+  "Nombre": "Skendoul Mohamed",
+  "email": "skendoulmohamed@gmail.com",
+  "linked": "https://www.linkedin.com/in/mohamed-skendoul-273443224/",
+  "github": "https://github.com/mohadeev",
+  "url": "https://umdev-porfolio.vercel.app/",
+  "imagen": "https://umdev-porfolio.vercel.app/_next/static/media/mohamed.baf56c13.jpg",
+  "descripcion": "I'm Mohamed Skendoul, a Senior Full-Stack Web Designer & Developer. I focus on listening and understanding your requirements and then acting on your needs to deliver truly unique, engaging, and impactful WordPress websites.",
+  "inicio": {
+    "HTML": 1,
+    "CSS": 1,
+    "JS": 1,
+    "VUE": 3,
+    "API": 2
+  },
+  "fin": {
+    "HTML": 1,
+    "CSS": 1,
+    "JS": 1,
+    "VUE": 3,
+    "API": 2
+  }
+}
+
+        
+]
+}
+

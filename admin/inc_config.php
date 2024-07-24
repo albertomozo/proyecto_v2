@@ -8,11 +8,11 @@
 
 $server = 'http://localhost/';
 $sitioTitulo = 'Pelis - '; // Aparecera en la cebereca
-$sitioRutaLocal = '/infinity'; // si la aplicación  no esta directamente colocado en la raiz de sitio.
+$sitioRutaLocal = '/proyecto_v2/'; // si la aplicación  no esta directamente colocado en la raiz de sitio.
 $rutaImagenes = '/imagenes/'; // carpeta donde guarderemos las imagenes 
 $rutaImagenesPerfil='admin/img/perfil/';// carpeta donde se guardan las fotos de perfil de los usuarios
-$rutaLog = '/infinity/admin/log/';
-$rutaLogPub = '/infinity/log/';
+$rutaLog = '/proyecto_v2/admin/log/';
+$rutaLogPub = '/proyecto_v2/log/';
 $rutaModelomail = 'admin/';
 /* definicion de variables del head */
 $headTitle = $sitioTitulo; // para cambiarlo añadir la variable en el fichero particular;
@@ -22,8 +22,8 @@ $headAutor = 'Alberto Mozo';
 $pagina = $_SERVER['SCRIPT_NAME'];
 $logaccion = '-'; // variable para incluir accion  a guardar en fichero log inc_logaccesos.php
 /* variables para el manejo de grupos de formación */
-$grupos = ['IFCD0210_2022207.json','IFCD0210_2022211.json','IFCD0210_202211.txt','IFCD0210_202207.txt'];
-$grupos = ['IFCD0210_2022207.json'];
+$grupos = ['IFCD0210_202207.json','IFCD0210_202211.json','FRONT_202303.json','IFCD0210_202403.json'];
+//$grupos = ['IFCD0210_2022207.json'];
 
 /* array de roles de usuario 
 si añadimos un nuevo rol debemos generar un nuevo indice */
@@ -124,4 +124,46 @@ $mailEnvioPie = '<tr>
 // podriamos definirlo  aqui o usar otro include (inc_conexion.php);
 
 
+/* conexion a tabla config */
+// vamos a realizar una conxion solo para acceder a las tablas de configuracion
+$servidor="localhost";
+$bduser="root";
+$bdclave="";
+$bdnombre="peliculas";
+$concon=mysqli_connect($servidor,$bduser,$bdclave,$bdnombre);
+if ($concon){
+    mysqli_set_charset($concon,'utf8');
+}
+// obtengo todos los valores de la tabla de configuracion (un unico registro)
+$query = "select * from config";
+$resultado = mysqli_query($concon,$query);
+while ($fila = mysqli_fetch_array($resultado)){
+  foreach ($fila as $key => $valor ){
+    global $$key;
+     $$key = $valor;
+  }
+}
 
+//ACCIONES QUE DEPENDEN DE LA CONFIGURACION (tabla config)
+// desactivar la web 
+// redirigimos a pagina_aviso.php si el campo publica_aviso = 1  
+$ruta = parse_url($_SERVER['PHP_SELF'], PHP_URL_PATH);
+//if ($publica_aviso == 1) { header("location:pagina_aviso.php");};
+ if ($publica_aviso == 1 && basename($_SERVER['PHP_SELF'] ) != 'pagina_aviso.php' && strpos($ruta, "/admin/") == false ) { header("location:pagina_aviso.php"); } // FALLA PARA LAS PAGINAS ADMIN
+
+
+ // $CFGP Array en el que voy a almacenar todos los valores almacenadod enla tabla  config_privada
+global $CFGP ;
+$CFGP = [];
+ $query = "select * from config_privada";
+ $resultado = mysqli_query($concon,$query);
+ while ($fila = mysqli_fetch_array($resultado)){
+   foreach ($fila as $key => $valor ){
+          $CFGP[$fila['meta']] = $fila['valor'];
+          $meta = $fila['meta'];
+          $$meta = $fila['valor'];
+   }
+ }
+ 
+
+mysqli_close($concon);

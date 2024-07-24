@@ -42,9 +42,44 @@
                     <!-- Content Row -->
                     <?php 
                     include("inc_conexion_peliculas.php");
+                    if ($_POST){
+                        echo 'update';
+                       // Inicializar una variable para almacenar partes del set
+                        $set_parts = [];
 
-               
+                        // Iterar sobre los datos POST para construir la parte SET de la consulta
+                        print_r($_POST);
+                        foreach ($_POST as $key => $valor) {
+                            if ($key != 'enviar'){
+                                // Asegurarse de escapar los valores para evitar SQL injection
+                                $key = mysqli_real_escape_string($conpel, $key);
+                                $valor = mysqli_real_escape_string($conpel, $valor);
 
+                                // Agregar al array de partes del set
+                                $set_parts[] = "`$key` = '$valor'";
+                            }
+                        }
+
+                        // Unir las partes del set en una sola cadena separada por comas
+                        $set_clause = implode(", ", $set_parts);
+
+                        // Construir la consulta SQL de actualización
+                        echo  $update_query = "UPDATE config SET $set_clause";
+
+                        // Ejecutar la consulta de actualización
+                        if (mysqli_query($conpel, $update_query)) {
+                            echo "Actualización exitosa";
+                        } else {
+                            echo "Error en la actualización: " . mysqli_error($conpel);
+                        }
+
+                    }
+                    // visualizar formulario ?>
+                    
+                    <hr>
+
+                    <form name="formconfig" method="POST" action = "">
+                    <?php
                     echo  $query = "select * from config";
                     $resultado = mysqli_query($conpel,$query);
                     //print_r($resultado);
@@ -52,18 +87,25 @@
                                     
                         while($fila=mysqli_fetch_array($resultado)){  
                            foreach ($fila as $key => $valor){
+                            if (!is_int($key)  ){
                             ?>
                               <div class="form-group row">
                                 <label for="<?php echo $key;?>" class="col-sm-2 col-form-label"><?php echo $key;?></label>
                                 <div class="col-sm-10">
-                                  <input type="text" class="form-control" id="<?php echo $key;?>" name="<?php echo $key;?>" value="<?php echo $valor;?>" readonly>
+                                  <input type="text" class="form-control" id="<?php echo $key;?>" name="<?php echo $key;?>" value="<?php echo $valor;?>" >
                                 </div>
                               </div>
                               <?php
                            }
+                           }
                         }
                     }    
-                        ?>   
+                    ?> 
+                   
+                        <div class="col-sm-10">
+                                  <button type="submit"  id="enviar" name="enviar" value="enviar">GUARDAR</button>
+                            </div>
+                    </form>  
                         
                    <hr>
                  

@@ -1,0 +1,8 @@
+votaciones_remoto.php
+00-php_info.php
+api
+admin/log
+admin/node_modules
+admin/vendor
+admin/inc_conexion_peliculas_remoto.php
+admin/inc_conexion_peliculas_local.php

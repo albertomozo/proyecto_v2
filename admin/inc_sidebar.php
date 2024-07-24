@@ -1,12 +1,12 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center <!-- justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center <!-- justify-content-center" href="peliculas.php">
                <div class="sidebar-brand-icon rotate-n-15">
                    <!--  <i class="fas fa-laugh-wink"></i> -->
                    <img src="./img/alberto.gif" width="50px">
                 </div>    
-                <div class="sidebar-brand-text mx-3">Pelis <sup>1.0</sup></div>
+                <div class="sidebar-brand-text mx-3">Pelis <sup><?PHP if(isset($CFGP['version'])) {echo $CFGP['version'];} else {echo 'sn';} ?></sup></div>
             </a>
 
             <!-- Divider -->
@@ -21,7 +21,7 @@
             }
             ?>
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="peliculas.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Panel de Control</span></a>
             </li>
@@ -34,7 +34,7 @@
                 Interface
             </div>
 
-            <!-- Nav Item - Pages Collapse Menu -->
+            <!-- Nav Item - Pages Collapse Menu Peliculas-->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
@@ -104,27 +104,13 @@
                         <h6 class="collapse-header">Configuración</h6>
                         <a class="collapse-item <?php if ($menuenlace == 'config_publica') {echo 'active'; }?>" href="config_publica.php">Pública</a>
                         <a class="collapse-item <?php if ($menuenlace == 'config_privada') {echo 'active'; }?>" href="config_privada.php">Privada</a>
+                        <a class="collapse-item <?php if ($menuenlace == 'config_avanzada') {echo 'active'; }?>" href="config_avanzada.php">Avanzada</a>
                         
                     </div>
                 </div>
             </li>
 
-                       <!-- Nav Item - Configuracion  -->
-                       <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEst"
-                    aria-expanded="true" aria-controls="collapseEst">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Configuración</span>
-                </a>
-                <div id="collapseEst" class="collapse <?php if($menugrupo == 'config') { echo 'show'; } ?>" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Configuración</h6>
-                        <a class="collapse-item <?php if ($menuenlace == 'config_publica') {echo 'active'; }?>" href="config_publica.php">Pública</a>
-                        <a class="collapse-item <?php if ($menuenlace == 'config_privada') {echo 'active'; }?>" href="config_privada.php">Privada</a>
-                        
-                    </div>
-                </div>
-            </li>
+                       
 
 
 

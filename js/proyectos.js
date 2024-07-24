@@ -63,12 +63,25 @@
     
     
       function ficha_persona (persona,ord){
+        // CONTROL DE IMAGENES 
+        if (persona.imagen.search('http')>-1){
+          imagen = persona.imagen;
+        } else {
+          imagen = 'img/'+ persona.imagen;
+        }
+
+        if (urlExists(persona.url)){
+            $enlace = `<a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="${persona.url}" target="_blank"><i class="fa fa-link"></i></a>`;
+        } else {
+            $enlace = '';
+        }
+
         ficha = `<div class="col-lg-4 col-md-6 portfolio-item ${ord}">
             <div class="portfolio-img rounded overflow-hidden">
-                <img class="img-fluid" src="img/${persona.imagen}" alt="">
+                <img class="img-fluid" src="${imagen}" alt="">
                 <div class="portfolio-btn">
                     <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/${persona.imagen}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                    <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="${persona.url}" target="_blank"><i class="fa fa-link"></i></a>
+                    ${$enlace}
                 </div>
             </div>
             <div class="pt-3">
@@ -145,3 +158,73 @@
             for (i=1;i<=n;i++){ texto += '*';}
             return texto;
         }
+
+
+
+
+    function verproyecto(proy)
+    {
+      console.log(proy)
+      fetch(proy)
+      .then(response => {
+        if (response.ok)
+          return response.text()
+        else
+          console.log("fallo");
+          throw new Error(response.status);
+      })
+      .then(data => {
+          console.log("Datos: " + data);
+          const clase=JSON.parse(data);
+          console.log("Clase: " + clase);
+         // datos alumnos a  #alumnos
+         //let talumnos = '<h2>Alumnos</h2>';
+         let talumnos ='';
+         var cont = 1;
+        for (const item of clase.alumnos)
+        {
+          switch (cont)
+          {
+            case 1:
+              orden = 'first';
+              cont++;
+              break;
+            case 2:
+              orden = 'second';
+              cont++;
+              break;
+            case 3:
+              orden = 'third';
+              cont=1;
+              break
+          }
+          talumnos += ficha_persona(item,orden);
+         
+          
+    
+        }
+        document.querySelector('#proyectos').innerHTML=talumnos;
+         
+    
+       
+       
+      })
+      .catch(err => {
+        console.error("ERROR: ", err.message)
+      });
+    
+    }
+
+
+    async function urlExists(url) {
+      try {
+          const response = await fetch(url, { method: 'HEAD' });
+          if (response.ok) {
+              return true; // La URL existe
+          } else {
+              return false; // La URL no existe
+          }
+      } catch (error) {
+          return false; // Ocurrió un error, la URL no existe o no es accesible
+      }
+  }

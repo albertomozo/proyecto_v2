@@ -1,0 +1,75 @@
+{"curso":"IFCD0210_2024_03",
+"fecha inicio" : "2024-03-16",
+"fecha fin" : "2024-07-24",
+"lugar" : "Donosti",
+"empresa" : "CEBANC",
+"url_drive" : "https://docs.google.com/presentation/d/1xnL3trJ2fUdLhTvcV_nGY20AvIViLePu9sVpZYWu_-o/edit?usp=sharing",
+
+"tutor":
+    {"Nombre":"Alberto Mozo",
+        "email" : "albertomozodocente@gmail.com",
+        "linked" : "https://www.linkedin.com/in/alberto-mozo-avellaned-80615713/",
+        "github" : "albertomozo",
+        "url" : "http://albertomozo.infinityfreeapp.com"
+       
+    
+    },
+"alumnos" : [
+    {
+        "Nombre":"Humberto Lineros",
+        "email" : "humberto.lineros@gmail.com",
+        "linked" : "https://cl.linkedin.com/in/humberto-lineros-668b3046",
+        "github" : "BetoLineros",
+        "url" : "http://hlineros.com/proyectofinal/php/index.php",
+        "descripcion" : "Perfil profesional",
+        "imagen" : "obras.gif",
+        "inicio" : {    
+            "HTML" : 2,
+            "CSS" : 1,
+            "JS" : 0,
+            "PHP" : 0,
+            "MySQL" : 0,
+            "API REST": 0,
+            "NODE.js" :0
+        },
+        "fin" : {    
+             "HTML" : 4,
+            "CSS" : 3,
+            "JS" : 2,
+            "PHP" : 2,
+            "MySQL" : 2,
+            "API REST": 2,
+            "NODE.js" :2
+        }
+    },
+    {
+        "Nombre":"Antton",
+        "email" : "anttongorrochategui@gmail.com",
+        "linked" : "https://www.linkedin.com/in/antton-gorrochategui-aguirre-03502330a/",
+        "github" : "AnttonGA",
+        "url" : "http://antton.kesug.com/",
+        "descripcion" : "Crear una plataforma web que permita a los administradores gestionar y editar rutas para actividades como el esquí de travesía, el ciclismo y el senderismo. Los usuarios pueden ver y navegar por las rutas disponibles, además de subir sus propias rutas y administrar sus propias rutas.",
+        "imagen" : "obras.gif",
+        "inicio" : {    
+            "HTML" : 0,
+            "CSS" : 0,
+            "JS" : 0,
+            "PHP" : 0,
+            "MySQL" : 0,
+            "API REST": 0,
+            "NODE.js" :0
+        },
+        "fin" : {    
+             "HTML" : 4,
+            "CSS" : 3,
+            "JS" : 5,
+            "PHP" : 4,
+            "MySQL" : 3,
+            "API REST": 3,
+            "NODE.js" : 2
+        }
+    }
+        
+]
+}
+

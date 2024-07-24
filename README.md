@@ -19,6 +19,13 @@ proyecto final curso BACK, desarrorralo con PHP Y MYSQL
 * Clonar desde github
 
 * crear BD peliculas en MySql mediante el fichero peliculas.sql
+  https://github.com/albertomozo/proyectofinal/blob/main/peliculas.sql 
+  Diseño de las tablas y datos de :
+  generos - Sacados de la API de peliculas
+  usuarios - con un usario admin por defecto para poder acceder al dashboard
+            admin   12345678
+  config y config_privada - datos de configuracion
+  
 * configurar el sitio en los ficheros de configuracion 
   * admin/inc_config.php https://github.com/albertomozo/proyectofinal/blob/main/admin/inc_config.php 
       * Configuración BD
